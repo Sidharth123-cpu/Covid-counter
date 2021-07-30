@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <TextView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:onClick="returnMainActivity"
+        android:background="@drawable/abc_vector_test"></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="-24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coronavirus Cases:"
+            android:fontFamily="@font/bebasneue_regular"
+            android:textSize="45dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"></TextView>
+        <TextView
+            android:fontFamily="@font/bebasneue_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0000"
+            android:textSize="45dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:id="@+id/coronavirusCaseLabel"
+            android:layout_marginTop="5dp"></TextView>
+
+        <TextView
+            android:fontFamily="@font/bebasneue_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Deaths:"
+            android:textColor="@android:color/white"
+            android:textSize="45dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:fontFamily="@font/bebasneue_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="45dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:id="@+id/deathCaseLabel"
+            android:layout_marginTop="5dp"></TextView>
+        <TextView
+            android:fontFamily="@font/bebasneue_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Recovered:"
+            android:textColor="@android:color/white"
+            android:textSize="45dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:fontFamily="@font/bebasneue_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000"
+            android:textSize="45dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:id="@+id/recoveredCaseLabel"
+            android:layout_marginTop="5dp"></TextView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/bebasneue_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Active Cases:"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"></TextView>
+
+        <TextView
+            android:fontFamily="@font/bebasneue_regular"
+            android:id="@+id/activeCaseLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0000"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"></TextView>
+        <TextView
+            android:fontFamily="@font/bebasneue_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="Closed Cases:"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="24dp" />
+
+        <TextView
+            android:fontFamily="@font/bebasneue_regular"
+            android:id="@+id/closedCaseLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0000"
+            android:textColor="@android:color/white"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="45dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/bebasneue_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="New Cases Today: "
+                android:textColor="@android:color/white"
+                android:textSize="24dp" />
+            <TextView
+                android:fontFamily="@font/bebasneue_regular"
+                android:id="@+id/newCaseLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0000"
+                android:textColor="@android:color/white"
+                android:textSize="24dp"
+                tools:ignore="InvalidId" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:onClick="updateCanadaWebsite"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_refresh_black_24dp"
+        android:background="@android:color/transparent" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FF0000"
+        android:fontFamily="@font/bebasneue_regular"
+        android:onClick="launchProvinceDetail"
+        android:text="Provinces Detail"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:textSize="22dp"></Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Updated"
+        android:fontFamily="@font/bebasneue_regular"
+        android:textSize="15dp"
+        android:id="@+id/lastUpdatedLabel"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"></TextView>
+</LinearLayout>
