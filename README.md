@@ -1,0 +1,2 @@
+# Covid-counter
+For Android
